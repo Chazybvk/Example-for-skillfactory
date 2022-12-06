@@ -1,3 +1,5 @@
+window.onload = function(){
+
 var prev = document.querySelector('.previous');
 var next = document.querySelector('.next');
 var alternateprev = document.querySelector('.alternatearrowleft');
@@ -156,4 +158,20 @@ itterationCount = 3;
 count();
 });
 
+dot1.addEventListener('click', function(){
+itterationCount = 1;
 count();
+});
+
+dot2.addEventListener('click', function(){
+itterationCount = 2;
+count();
+});
+
+dot3.addEventListener('click', function(){
+itterationCount = 3;
+count();
+});
+
+count();
+}
