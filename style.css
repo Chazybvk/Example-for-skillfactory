@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -12,7 +13,6 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 a:link { color: #E3B873; }
-
 nav,footer,header,aside{display: block;}
 
 html,body{
@@ -365,13 +365,16 @@ body * {
 }
 
 #firsti {
-	color: #E3B873;
 	margin-right: 60px;
-	border-bottom: 1px solid rgba(227, 184, 115, 1) ;
 }
 #secondi {
 
 	margin-right: 60px;
+}
+
+.active {
+	color: #E3B873;
+	border-bottom: 1px solid rgba(227, 184, 115, 1) ;
 }
 
 
@@ -1281,6 +1284,9 @@ section {
 .secondpage {
 	height: 100%;
 }
+.secondpage *{
+	transition-duration: 0.5s;
+}
 
 .rightblock {
 	display: none;
@@ -1289,7 +1295,6 @@ section {
 .leftblock {
 	margin: 0 auto;
 	width: 375px;
-
 	align-items: center;
 }
 
